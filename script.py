@@ -40,7 +40,7 @@ def check_weather():
         city_ent.insert(0, "You didn't entry a city")
     else:
         city_name = city_ent.get()
-        api_key = "d8aa317b30d3cdf0f2203ebc1348c182"
+        api_key = ""
         response_format = "html"
         weather_response = requests.get(
             f"http://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={api_key}&mode={response_format}")
